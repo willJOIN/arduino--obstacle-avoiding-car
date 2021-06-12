@@ -38,7 +38,7 @@ void loop() {
   Serial.print("Estado do sensor = ");
   Serial.println(sensor);
   if (sensor == LOW) {                        //Se o sensor não captar obstáculos, acender LED verde e seguir em frente
-    delay(10000); 				                    //Tempo de partida de 10 segundos
+    delay(10000); 		                //Tempo de partida de 10 segundos
     digitalWrite(led_verde, HIGH);
     digitalWrite(led_vermelho, LOW);
     Serial.println("Indo para frente");
